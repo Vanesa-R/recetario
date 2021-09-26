@@ -1,0 +1,29 @@
+[        
+        {
+                "title" : "Bacalao a la dorada",
+                "ingredients" : [
+                        "½ kg de bacalao",
+                        "½ kg de patatas",
+                        "4 huevos",
+                        "1 cebolla grande",
+                        "8 cucharadas de aceite",
+                        "4 cucharadas de nata líquida",
+                        "1 pizca de pimienta",
+                        "Sal",
+                        "Aceite",
+                        "Perejil"
+                ],
+                "image" : "",
+                "elaboration" : [
+                        "Poner el bacalao a remojo 24 horas antes. Desmenuzarlo y escurrirlo encima de un trapo para que quede bien seco.",
+                        "Picar"
+                ]
+        },
+        {
+                "title" : "",
+                "ingredients" : "",
+                "image" : "",
+                "elaboration" : "",
+                "tags" : ""
+        }
+]

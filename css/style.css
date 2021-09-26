@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@500&display=swap');
+
+:root {
+        --poppins: 'Poppins', sans-serif;
+        --lora: 'Lora', serif;
+}
+
+
+body {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        font-family: var(--lora);
+        font-size: 14px;
+        font-weight: 600;
+}
+
+body::before {
+        position: absolute;
+        content: "";
+        width: 70%;
+        height: 70vh;
+      /* background: url("/images/bg.png") no-repeat;*/
+        background-size: contain;
+        transform: rotate(-55deg);
+        opacity: .4;
+        z-index: -5;
+}
+
+.header,
+.main {
+        display: flex;
+        align-items: center;
+        padding: 1em 1.5em;
+}
+.header {
+        justify-content: flex-end;
+}
+.main {
+        flex-direction: column;
+        justify-content: center;
+}
+
+.paragraph {
+        margin-top: 1em;
+        margin-bottom: .5em;
+        font-family: var(--poppins);
+        font-size: 2em;
+        text-align: center;
+}
+
+.section__recipe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin-top: 2em;
+}
+
+/* Receta*/
+.card__recipe {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+        background-color: #fcfcfc;
+}
+.title__recipe {
+        font-family: var(--poppins);
+        font-size: 2em;
+}
+
+.subtitle {
+        font-size: 1.2em;
+        margin-bottom: .5em
+}
+
+.list__ingredients {
+        margin-bottom: 2em;
+}
+
+.list__item__ingredients {
+       list-style-position: inside;
+       margin-left: 1em;
+}
