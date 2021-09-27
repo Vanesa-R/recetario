@@ -1,0 +1,14 @@
+.main {
+        /* Saludo */
+        .greeting{
+                color: $grey;
+        }
+        /* Buscador */
+        .paragraph {
+                margin-top: 1em;
+                margin-bottom: .5em;
+                font-family: $poppins;
+                font-size: 2em;
+                text-align: center;
+        }
+}

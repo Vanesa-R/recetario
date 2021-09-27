@@ -1,27 +1,3 @@
-/*************
-     SALUDAR
-*************/
-
-// Variables DOM
-const greeting = document.querySelector(".greeting");
-
-// Función 
-const greet = () => {
-        let now =  new Date().getHours()
-        let name = "Teresa";
-
-        if ((now > 6) && (now <= 12)) {
-                greeting.textContent = `¡Buenos días, ${name}!`
-        } else if ((now >= 13) && (now < 20)){
-                greeting.textContent = `¡Buenas tardes, ${name}!`
-        } else {
-                greeting.textContent = `¡Buenas noches, ${name}!`
-        }
-}
-greet()
-       
-        
-
 /**************************
      BUSCADOR DE RECETAS
 ***************************/
@@ -30,13 +6,44 @@ greet()
 const inputRecipe = document.querySelector("#recipe");
 const btnSearch = document.querySelector("#search__recipe");
 const showRecipe = document.querySelector(".section__recipe")
+const card = document.querySelector(".card__recipe")
+
+// Habilitar y deshabilitar el buscador
+
+const enabledBtnSearch = () => {
+        btnSearch.disabled = false;
+}
+
+const disabledBtnSearch = () => {
+        btnSearch.disabled = true;
+        clean()
+}
+
+inputRecipe.addEventListener("input", (e) => {
+        (inputRecipe.value === "") ? disabledBtnSearch() : enabledBtnSearch();
+})
 
 
-// Evento de escucha sobre el buscador
+// Limpiar sección de recetas
+
+const clean = () => {
+        showRecipe.textContent = ""
+        showRecipe.removeChild(card)
+}
+
+
+inputRecipe.addEventListener("input", (e) => {
+        if  ((inputRecipe.value === "") && (showRecipe.textContent !== "")){
+                clean()
+        }
+})
+
+// Evento de escucha sobre el buscador si está habilitado
 
 btnSearch.addEventListener("click", (e) => {
 
-        fetch("recipe.json")
+        console.log("click")
+        fetch("../dist/js/recipe.json")
                 .then(res => res.ok ? Promise.resolve(res) : Promise.reject(error))
                 .then(res => res.json())
                 .then(data => {
