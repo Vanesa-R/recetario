@@ -1,34 +1,40 @@
+/*************
+     SALUDAR
+*************/
 
-// Saludo
+// Variables DOM
+const greeting = document.querySelector(".greeting");
 
-const saludo = document.querySelector(".hi");
-
-
-const saludar = () => {
+// Función 
+const greet = () => {
         let now =  new Date().getHours()
         let name = "Teresa";
 
         if ((now > 6) && (now <= 12)) {
-                saludo.textContent = `¡Buenos días, ${name}!`
+                greeting.textContent = `¡Buenos días, ${name}!`
         } else if ((now >= 13) && (now < 20)){
-                saludo.textContent = `¡Buenas tardes, ${name}!`
+                greeting.textContent = `¡Buenas tardes, ${name}!`
         } else {
-                saludo.textContent = `¡Buenas noches, ${name}!`
+                greeting.textContent = `¡Buenas noches, ${name}!`
         }
 }
-
-saludar()
+greet()
        
         
 
-// Buscador de recetas
+/**************************
+     BUSCADOR DE RECETAS
+***************************/
 
+//  Variables DOM
 const inputRecipe = document.querySelector("#recipe");
-const search = document.querySelector("#search__recipe");
+const btnSearch = document.querySelector("#search__recipe");
 const showRecipe = document.querySelector(".section__recipe")
 
 
-search.addEventListener("click", (e) => {
+// Evento de escucha sobre el buscador
+
+btnSearch.addEventListener("click", (e) => {
 
         fetch("recipe.json")
                 .then(res => res.ok ? Promise.resolve(res) : Promise.reject(error))
@@ -36,7 +42,7 @@ search.addEventListener("click", (e) => {
                 .then(data => {
                         
                         const fragment = document.createDocumentFragment();
-                
+
                         if (showRecipe.textContent === "") {
 
                                 for (const key of data){
@@ -82,27 +88,22 @@ search.addEventListener("click", (e) => {
         
                                                 for (let p of key.elaboration){
                                                         const elaboration = document.createElement("p");
+                                                        elaboration.classList.add("paragraph__elaboration");
                                                         elaboration.textContent = `${p}`
                                                         card.appendChild(elaboration)
                                                 }
 
-
                                                 fragment.appendChild(card)
 
                                         }
-                                        
-                                        else {
-                                                console.log("no hay recetas relacionadas")
-                                        }
+                                
                                         showRecipe.appendChild(fragment)
-        
-                                      
+                
                                 }
                         }
-                      
-                        
-        
 
+                        
                 })
                 .catch(err => console.log(err))
-} )
+      
+})
