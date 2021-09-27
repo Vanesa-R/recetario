@@ -1,42 +1,55 @@
+/**************************
+     BUSCADOR DE RECETAS
+***************************/
 
-// Saludo
+//  Variables DOM
+const inputRecipe = document.querySelector("#recipe");
+const btnSearch = document.querySelector("#search__recipe");
+const showRecipe = document.querySelector(".section__recipe")
+const card = document.querySelector(".card__recipe")
 
-const saludo = document.querySelector(".hi");
+// Habilitar y deshabilitar el buscador
 
-
-const saludar = () => {
-        let now =  new Date().getHours()
-        let name = "Teresa";
-
-        if ((now > 6) && (now <= 12)) {
-                saludo.textContent = `¡Buenos días, ${name}!`
-        } else if ((now >= 13) && (now < 20)){
-                saludo.textContent = `¡Buenas tardes, ${name}!`
-        } else {
-                saludo.textContent = `¡Buenas noches, ${name}!`
-        }
+const enabledBtnSearch = () => {
+        btnSearch.disabled = false;
 }
 
-saludar()
-       
-        
+const disabledBtnSearch = () => {
+        btnSearch.disabled = true;
+        clean()
+}
 
-// Buscador de recetas
-
-const inputRecipe = document.querySelector("#recipe");
-const search = document.querySelector("#search__recipe");
-const showRecipe = document.querySelector(".section__recipe")
+inputRecipe.addEventListener("input", (e) => {
+        (inputRecipe.value === "") ? disabledBtnSearch() : enabledBtnSearch();
+})
 
 
-search.addEventListener("click", (e) => {
+// Limpiar sección de recetas
 
-        fetch("recipe.json")
+const clean = () => {
+        showRecipe.textContent = ""
+        showRecipe.removeChild(card)
+}
+
+
+inputRecipe.addEventListener("input", (e) => {
+        if  ((inputRecipe.value === "") && (showRecipe.textContent !== "")){
+                clean()
+        }
+})
+
+// Evento de escucha sobre el buscador si está habilitado
+
+btnSearch.addEventListener("click", (e) => {
+
+        console.log("click")
+        fetch("../dist/js/recipe.json")
                 .then(res => res.ok ? Promise.resolve(res) : Promise.reject(error))
                 .then(res => res.json())
                 .then(data => {
                         
                         const fragment = document.createDocumentFragment();
-                
+
                         if (showRecipe.textContent === "") {
 
                                 for (const key of data){
@@ -82,27 +95,22 @@ search.addEventListener("click", (e) => {
         
                                                 for (let p of key.elaboration){
                                                         const elaboration = document.createElement("p");
+                                                        elaboration.classList.add("paragraph__elaboration");
                                                         elaboration.textContent = `${p}`
                                                         card.appendChild(elaboration)
                                                 }
 
-
                                                 fragment.appendChild(card)
 
                                         }
-                                        
-                                        else {
-                                                console.log("no hay recetas relacionadas")
-                                        }
+                                
                                         showRecipe.appendChild(fragment)
-        
-                                      
+                
                                 }
                         }
-                      
-                        
-        
 
+                        
                 })
                 .catch(err => console.log(err))
-} )
+      
+})

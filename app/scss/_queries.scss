@@ -1,0 +1,25 @@
+/* Media queries*/
+
+@media (min-width: 375px){
+        .card__recipe:nth-child(3n)::before {
+                left: 15%;
+        }
+        .title__recipe {
+                margin-top: .8em;
+        }
+}
+
+@media (min-width: 425px){
+        .card__recipe:nth-child(3n)::before {
+                left: 23%;
+        }
+}
+
+@media (min-width: 425px){
+        .card__recipe {
+                padding: 1em 2em;
+        }
+        .card__recipe:nth-child(3n)::before {
+                left: 35%;
+        }       
+}

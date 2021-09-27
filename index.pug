@@ -1,0 +1,21 @@
+doctype html
+html(lang="es")
+        head
+                meta(charset="UTF-8")
+                meta(http-equiv="X-UA-Compatible", content="IE=edge")
+                meta(name="viewport", content="width=device-width, initial-scale=1.0")
+                link(rel="stylesheet" href="css/normalize.min.css" type="text/css")
+                link(rel="stylesheet" href="css/style.min.css" type="text/css")
+                title Las recetas de mamá
+        body
+                header.header
+                        p.greeting
+
+                main.main
+                        p.paragraph ¿Qué receta necesitas?
+                        div.inputs
+                                input#recipe(type="text", name="recipe")
+                                input#search__recipe(type="button", value="Buscar" disabled)
+                        section.section__recipe
+
+                script(src="js/app.js")
