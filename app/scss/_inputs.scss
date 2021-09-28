@@ -1,14 +1,25 @@
 .main {
-        /* Saludo */
-        .greeting{
-                color: $grey;
-        }
-        /* Buscador */
+        /* Search */
         .paragraph {
                 margin-top: 1em;
                 margin-bottom: .5em;
                 font-family: $poppins;
                 font-size: 2em;
                 text-align: center;
+        }
+        .inputs {
+                display: flex;
+                justify-content: center;
+                .input__recipe {
+                        padding-left: .4em;
+                        outline: 0;
+                }
+                .search__icon {
+                        width: 2em;
+                        background-color: $lightGrey;
+                        padding: .3em;
+                        border-radius: 50%;
+                        margin-left: .5em;
+                }
         }
 }

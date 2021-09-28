@@ -50,35 +50,39 @@
                                 text-align: center;
                                 margin-top: 1em;
                         }
-                        .subtitle {
+                        .subtitle__recipe {
                                 position: relative;
                                 font-size: 1.2em;
                                 font-variant: small-caps;
                                 font-weight: 700;
-                                margin-bottom: .5em;
+                                margin-top: 1.5em;
+                                margin-bottom: 1em;
                                 text-indent: 2em;
                                 color: $grey;
                                 &::before {
                                         position: absolute;
-                                        content: url("../images/ingredientes.png");
+                                        content: url("../images/subtitle_icon.png");
                                         top: -.53em;
                                         left: -2em;
-                                        filter: invert(37%) sepia(7%) saturate(3049%) hue-rotate(243deg) brightness(93%) contrast(90%);
                                 }
+                        }
+                        .list__ingredients,
+                        .elaboration__recipe {
+                                margin-bottom: 1em;
                         }
                         .list__ingredients {
-                                margin-bottom: 2em;
                                 .list__item__ingredients {
                                         list-style-position: inside;
-                                        margin-left: 1em;
-                                 }
-                        }
-                        .paragraph__elaboration {
-                                margin-top: 1em;
-                                &:last-child{
-                                        margin-bottom: 1em;
+                                        text-indent: .5em;
+                                        margin-bottom: .2em;
                                 }
                         }
+                        .elaboration__recipe {
+                                .paragraph__elaboration {
+                                       margin-bottom: .2em;
+                                }
+                        }
+                        
                 }
         }
 }

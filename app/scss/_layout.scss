@@ -28,6 +28,10 @@ body {
         }
         .header {
                 justify-content: flex-end;
+                /* Greet */
+                .greeting{
+                        color: $grey;
+                }
         }
         .main {
                 flex-direction: column;
