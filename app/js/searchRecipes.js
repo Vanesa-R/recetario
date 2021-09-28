@@ -42,8 +42,7 @@ inputRecipe.addEventListener("input", (e) => {
 
 btnSearch.addEventListener("click", (e) => {
 
-        console.log("click")
-        fetch("../dist/js/recipe.json")
+        fetch("../dist/js/recipes.json")
                 .then(res => res.ok ? Promise.resolve(res) : Promise.reject(error))
                 .then(res => res.json())
                 .then(data => {
@@ -54,8 +53,14 @@ btnSearch.addEventListener("click", (e) => {
 
                                 for (const key of data){
 
-                                        if (key.title.toLowerCase().includes(inputRecipe.value.toLowerCase())){         
+                                        if (key.title
+                                                .toLowerCase()
+                                                .normalize("NFD").replace(/[\u0300-\u036f]/g, '')
+                                                .includes(inputRecipe.value
+                                                        .toLowerCase()
+                                                        .normalize("NFD").replace(/[\u0300-\u036f]/g, ''))){         
                                                 
+                                                               
                                                 // Card de la receta
                                                 const card = document.createElement("div");
                                                 card.classList.add("card__recipe");
@@ -70,7 +75,7 @@ btnSearch.addEventListener("click", (e) => {
 
                                                 // Ingredientes
                                                 const subtitleIngredients = document.createElement("h2");
-                                                subtitleIngredients.classList.add("subtitle");
+                                                subtitleIngredients.classList.add("subtitle__recipe");
                                                 subtitleIngredients.textContent = "Ingredientes:"
                                                 card.appendChild(subtitleIngredients);
 
@@ -89,16 +94,21 @@ btnSearch.addEventListener("click", (e) => {
                                                 // Elaboración
 
                                                 const subtitleElaboration = document.createElement("h2");
-                                                subtitleElaboration.classList.add("subtitle");
+                                                subtitleElaboration.classList.add("subtitle__recipe");
                                                 subtitleElaboration.textContent = "Elaboración:"
                                                 card.appendChild(subtitleElaboration);
-        
+
+                                                const sectionElaboration = document.createElement("div");
+                                                sectionElaboration.classList.add("elaboration__recipe");
+
                                                 for (let p of key.elaboration){
                                                         const elaboration = document.createElement("p");
                                                         elaboration.classList.add("paragraph__elaboration");
                                                         elaboration.textContent = `${p}`
-                                                        card.appendChild(elaboration)
+                                                        sectionElaboration.appendChild(elaboration)
                                                 }
+
+                                                card.appendChild(sectionElaboration)
 
                                                 fragment.appendChild(card)
 
