@@ -183,6 +183,28 @@
                         "Las cortamos con moldes metálicos, las colocamos en una bandeja engrasada con mantequilla y las cocinamos durante 20 minutos a 160º."
                 ],
                 "tags" : ["Postres", "Galletas"]
+        },
+        {
+                "title" : "",
+                "ingredients" : [
+                        "4 huevos",
+                        "250 gramos de azúcar",
+                        "250 gramos de harina",
+                        "250 gramos de maizena",
+                        "150 gramos de mantequilla",
+                        "250 gramos de mermelada de melocotón",
+                        "½ vaso se zumo de melocotón",
+                        "20 gramos de levadura en polvo"
+                ],
+                "image" : "",
+                "elaboration" : [
+                        "Ponemos los huevos y el azúcar en un recipiente y los batimos bien. Después añadimos la harina, la maizena, la levadura, la mantaquilla derretida y el zumo de melocotón mezclándolo todo.", 
+                        "Por último, se añade la mermelada y volvemos a mezclarlo muy bien.",
+                        "Se vierte en el molde, engrasado con mantequilla, y con rodajas de melocotón en el fondo. Se introduce en el horno a 160º  de 40 a 50 minutos.",
+                        "Los costados se adornan con trocitos de melocotón."
+                ],
+                "tags" : ["Postres", "Bizchoco"],
+                "notes" : "Sin el melocotón en el fondo y costados, también está riquísimo."
         }
         /* Tengo que mejorar esta sección para añadir substitulos en los ingredientes
         {
