@@ -104,6 +104,110 @@
                 "tags" : ["Helados"]
         },
         {
+                "title" : "Natillas merengadas",
+                "ingredients" : [
+                        "1 libro de leche",
+                        "12 huevos",
+                        "5 gramos de ralladura de limón",
+                        "350 gramos de azúcar",
+                        "Guindas para adornar"
+                ],
+                "image" : "",
+                "elaboration" : [
+                        "Se baten 4 claras a puntos de nieve junto con 150 gramos de azúcar.",
+                        "En un cazo se pone la leche al fuego, reservando un vaso. Cuando está hirviendo la leche se van echando montoncitos de clara, dandolés la vuelta para que quede el merengue duro, y se colocan en copitas individuales.",
+                        "En un recipiente aparte echamos 8 huevos y las 4 yemas restantes. Las batimos añadiendo el azúcar y la ralladura de limón con la leche reservada.",
+                        "Se bate bien y se mezcla con la leche caliente, sin dejar de remover. Se calienta al baño maría, removiendo hasta que espese. Se retira y se vierte encima de las claras.",
+                        "Se adorna con las guindas."
+                ],
+                "tags" : ["Postres", "Natillas"]
+        },
+        {
+                "title" : "Masa de hojaldre",
+                "ingredients" : [
+                        "200 gramos de harina fuerte",
+                        "250 mililitros de agua",
+                        "50 gramos de mantena de cerdo",
+                        "150 gramos de mantequilla",
+                        "1 huevo",
+                        "Zumo de un limón",
+                        "Sal"
+                ],
+                "image" : "",
+                "elaboration" : [
+                        "Ponemos la harina sobre un márbol, haciendo un montón. En el centro se hace un hueco y se coloca el huevo, la manteca, un pellizco de sal, el zumo de limón y el agua.",
+                        "Se mezcla todo bien y se amasa hasta que resulte una masa fina.",
+                        "Se trabaja un poco blanda, se hace una bola, se dan dos cortes y se deja reposar durante una hora.",
+                        "Mientras, se trabaja la mantequilla con la mano para que tome la misma consistencia que la masa. Esta se pone de nuevo en el mármol, se spolvorea con harina y se estira con el rodillo.",
+                        "Doblamos la masa de las orillas al centro, y dejamos reposar cinco minutos. Se vuelve a estirar (5 veces)."
+                ],
+                "tags" : ["Hojaldre", "Masas"]
+        },
+        {
+                "title" : "Buñuelos de chocolate",
+                "ingredients" : [
+                        "500 gramos de harina",
+                        "25 gramos de levadura",
+                        "½ litro de leche",
+                        "100 gramos de cacao",
+                        "150 gramos de mantequilla",
+                        "50 gramos de azúcar",
+                        "2 vasos de agua",
+                        "Aceite"
+                ],
+                "image" : "",
+                "elaboration" : [
+                        "En un cazo se calienta un vaso de agua con la levadura. Cuando está disuelta se añade la harina y se amasa suavemente, añadiendo el otro vaso de agua poco a poco hasta que quede una masa blanda y fina.",
+                        "Tapamos el recipiente y dejamos reposar durante 20 minutos.",
+                        "Calentamos el aceite y freimos los buñuelos en pequeñas bolitas.",
+                        "Ponemos la leche al fuero, reservando un atacita.",
+                        "En un bol aparte mezclamos la leche reservada, el azúcar y el cacao. Cuando está disuelto se añade a la leche hirviendo, sin dejar de remover hasta que espese.",
+                        "Se bañan los buñuelos con la mezcla aún caliente."
+                ],
+                "tags" : ["Buñuelos", "Postres", "Chocolate"]
+        },
+        {
+                "title" : "Galletas de nata",
+                "ingredients" : [
+                        "85 gramos de nata",
+                        "85 gramos de azúcar",
+                        "170 gramos de harina",
+                        "2 huevos",
+                        "20 gramos de levadura",
+                        "30 gramos de mantequilla"
+                ],
+                "image" : "",
+                "elaboration" : [
+                        "Batimos las yemas con el azúcar y la nata. Añadimos la levadura mezclada con la harina y lo mezclamos muy bien.",
+                        "Por último, incorporamos las claves a punto de nieve y la mantequilla.",
+                        "Las cortamos con moldes metálicos, las colocamos en una bandeja engrasada con mantequilla y las cocinamos durante 20 minutos a 160º."
+                ],
+                "tags" : ["Postres", "Galletas"]
+        },
+        {
+                "title" : "",
+                "ingredients" : [
+                        "4 huevos",
+                        "250 gramos de azúcar",
+                        "250 gramos de harina",
+                        "250 gramos de maizena",
+                        "150 gramos de mantequilla",
+                        "250 gramos de mermelada de melocotón",
+                        "½ vaso se zumo de melocotón",
+                        "20 gramos de levadura en polvo"
+                ],
+                "image" : "",
+                "elaboration" : [
+                        "Ponemos los huevos y el azúcar en un recipiente y los batimos bien. Después añadimos la harina, la maizena, la levadura, la mantaquilla derretida y el zumo de melocotón mezclándolo todo.", 
+                        "Por último, se añade la mermelada y volvemos a mezclarlo muy bien.",
+                        "Se vierte en el molde, engrasado con mantequilla, y con rodajas de melocotón en el fondo. Se introduce en el horno a 160º  de 40 a 50 minutos.",
+                        "Los costados se adornan con trocitos de melocotón."
+                ],
+                "tags" : ["Postres", "Bizchoco"],
+                "notes" : "Sin el melocotón en el fondo y costados, también está riquísimo."
+        }
+        /* Tengo que mejorar esta sección para añadir substitulos en los ingredientes
+        {
                 "title" : "Salmón en salsa tártara",
                 "ingredients" : [
                         "Salmón en rojadas",
@@ -114,5 +218,5 @@
                 "image" : "",
                 "elaboration" : "",
                 "tags" :""
-        }
+        } */
 ]
