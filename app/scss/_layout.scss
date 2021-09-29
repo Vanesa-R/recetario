@@ -1,11 +1,12 @@
 body {
         position: relative;
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        height: 100vh;
         min-height: 100vh;
         font-family: $lora;
         font-size: 13px;
-        background-color: $white;
+        background-color: #FDF9FD;
         color: $black;
         &::before {
                 position: absolute;
@@ -21,7 +22,8 @@ body {
                 z-index: -5;
         }
         .header,
-        .main {
+        .main,
+        .footer {
                 display: flex;
                 align-items: center;
                 padding: 1em 1.5em;
@@ -33,7 +35,8 @@ body {
                         color: $grey;
                 }
         }
-        .main {
+        .main,
+        .footer {
                 flex-direction: column;
                 justify-content: center;
         }
