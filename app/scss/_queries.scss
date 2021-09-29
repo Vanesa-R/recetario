@@ -23,3 +23,9 @@
                 left: 35%;
         }       
 }
+
+@media (min-width: 768px){
+        body::before {
+                top: 15em;
+        }
+}

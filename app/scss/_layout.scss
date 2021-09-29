@@ -5,16 +5,16 @@ body {
         width: 100%;
         min-height: 100vh;
         font-family: $lora;
-        font-size: 13px;
-        background-color: #FDF9FD;
+        font-size: 14px;
+        background-color: $lightPurple;
         color: $black;
         &::before {
                 position: absolute;
                 content: "";
                 width: 80%;
-                height: 100vh;
+                min-height: 60vh;
                 left: 4em;
-                top: 15em;
+                top: 18em;
                 background: url("../images/bg.png") no-repeat;
                 background-size: contain;
                 transform: rotateY(180deg);
@@ -25,19 +25,24 @@ body {
         .main,
         .footer {
                 display: flex;
-                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
                 padding: 1em 1.5em;
         }
         .header {
-                justify-content: flex-end;
-                /* Greet */
-                .greeting{
-                        color: $grey;
-                }
+                align-items: flex-end;
+                color: $grey;
         }
         .main,
         .footer {
-                flex-direction: column;
-                justify-content: center;
+                align-items: center;
+        }
+        .footer {
+                position: absolute;
+                bottom: -1.5em;
+                font-size: .6em;
+                text-align: center;
+                color: $grey;
         }
 }
