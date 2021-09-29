@@ -9,12 +9,13 @@ const showRecipe = document.querySelector(".section__recipe")
 const card = document.querySelector(".card__recipe")
 
 
-// Poner el foco en el input de texto 
+/* Poner el foco en el input de texto desde que carga la página */
 
 inputRecipe.focus()
 
 
-// Habilitar y deshabilitar el buscador
+
+/* Habilitar y deshabilitar el buscador */
 
 inputRecipe.addEventListener("input", (e) => {
         (inputRecipe.value === "") ? disabledBtnSearch() : enabledBtnSearch();
@@ -31,9 +32,8 @@ const disabledBtnSearch = () => {
 
 
 
-
-// Si el botón está habilitado,
-// búsqueda en la base de datos  e impresión de receta en la pantalla
+/* Si el botón está habilitado,
+   búsqueda en la base de datos  e impresión de receta en la pantalla */
 
 btnSearch.addEventListener("click", (e) => {
         printRecipe()
@@ -52,7 +52,7 @@ const printRecipe = () => {
                 
                 const fragment = document.createDocumentFragment();
 
-                if (showRecipe.textContent === "") {
+                if (!showRecipe.textContent) {
 
                         for (const key of data){
 
@@ -67,7 +67,7 @@ const printRecipe = () => {
                                         // Card de la receta
                                         const card = document.createElement("div");
                                         card.classList.add("card__recipe");
-
+                                        
 
                                         // Título
                                         const title = document.createElement("h1");
@@ -113,6 +113,7 @@ const printRecipe = () => {
 
                                         card.appendChild(sectionElaboration)
 
+
                                         fragment.appendChild(card)
 
                                 }
@@ -121,7 +122,6 @@ const printRecipe = () => {
         
                         }
                 }
-
                 
         })
         .catch(err => console.log(err))
@@ -130,7 +130,7 @@ const printRecipe = () => {
 
 
 
-// Limpiar sección de recetas
+/* Limpiar sección de recetas */
 
 inputRecipe.addEventListener("input", (e) => {
         if  ((inputRecipe.value === "") && (showRecipe.textContent !== "")){
@@ -139,6 +139,6 @@ inputRecipe.addEventListener("input", (e) => {
 })
 
 const clean = () => {
-        showRecipe.textContent = ""
+        showRecipe.textContent = "";
         showRecipe.removeChild(card)
 }
