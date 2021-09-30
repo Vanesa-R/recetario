@@ -5,10 +5,10 @@
                         "½ kg de bacalao",
                         "½ kg de patatas",
                         "4 huevos",
-                        "1 cebolla grande",
+                        "Una cebolla grande",
                         "8 cucharadas de aceite",
                         "4 cucharadas de nata líquida",
-                        "1 pizca de pimienta",
+                        "Una pizca de pimienta",
                         "Sal",
                         "Aceite",
                         "Perejil"
@@ -27,11 +27,11 @@
         {
                 "title" : "Ternera con setas",
                 "ingredients" : [
-                        "1 kg de ternera",
+                        "Un kilo de ternera",
                         "Setas",
-                        "1 tomate",
-                        "1 cebolla",
-                        "1 cabeza de ajos",
+                        "Un tomate",
+                        "Una cebolla",
+                        "Una cabeza de ajos",
                         "2 clavos",
                         "Tomillo fresco",
                         "Hierbabuena",
@@ -52,14 +52,14 @@
         {
                 "title" : "Sopa de otoño",
                 "ingredients" : [
-                        "1 cebolla",
-                        "1 pimiento verde",
-                        "1 muslo de pollo",
+                        "Una cebolla",
+                        "Un pimiento verde",
+                        "Un muslo de pollo",
                         "4 dientes de ajo",
                         "2 puerros enteros",
                         "5 cucharadas de arroz blanco",
                         "2 tomates",
-                        "1 huevo cocido",
+                        "Un huevo cocido",
                         "Sal"
                 ],
                 "image" : "",
@@ -72,9 +72,9 @@
         {
                 "title" : "Helado de piña",
                 "ingredients" : [
-                        "1 litro de nata",
+                        "Un litro de nata",
                         "300 gramos de azúcar",
-                        "1 vaso de zumo de piña",
+                        "Un vaso de zumo de piña",
                         "6 yogures de piña",
                         "5 claras de huevo"
                 ],
@@ -90,8 +90,8 @@
         {
                 "title" : "Helado de limón",
                 "ingredients" : [
-                        "1 litro de nata",
-                        "1 vaso de zumo de limón",
+                        "Un litro de nata",
+                        "Un vaso de zumo de limón",
                         "400 gramos de azúcar",
                         "6 claras de huevo"
                 ],
@@ -106,8 +106,8 @@
         {
                 "title" : "Natillas merengadas",
                 "ingredients" : [
-                        "1 libro de leche",
-                        "12 huevos",
+                        "Un litro de leche",
+                        "Una docena de huevos",
                         "5 gramos de ralladura de limón",
                         "350 gramos de azúcar",
                         "Guindas para adornar"
@@ -129,7 +129,7 @@
                         "250 mililitros de agua",
                         "50 gramos de mantena de cerdo",
                         "150 gramos de mantequilla",
-                        "1 huevo",
+                        "Un huevo",
                         "Zumo de un limón",
                         "Sal"
                 ],
