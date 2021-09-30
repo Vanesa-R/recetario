@@ -27,3 +27,7 @@
                 }
         }
 }
+.speaker__icon {
+      @extend .search__icon;
+      position: absolute;
+}

@@ -20,6 +20,10 @@ recognition.onresult = (event) => {
 
        printRecipe()
 
+       if (inputRecipe.value === "borrar"){
+               clean();
+               inputRecipe.value = "";
+       }
           
 }
 
@@ -27,7 +31,6 @@ recognition.onresult = (event) => {
 btnVoice.addEventListener("click", (e) => {
         recognition.start()
 })
-
 
 
               
