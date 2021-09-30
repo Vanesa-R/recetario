@@ -5,8 +5,8 @@
 //  Variables DOM
 const inputRecipe = document.querySelector("#recipe");
 const btnSearch = document.querySelector("#search__recipe");
-const showRecipe = document.querySelector(".section__recipe")
-const card = document.querySelector(".card__recipe")
+const showRecipe = document.querySelector(".section__recipe");
+const card = document.querySelector(".card__recipe");
 
 
 /* Poner el foco en el input de texto desde que carga la página */

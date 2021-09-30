@@ -1,7 +1,9 @@
 const btnSpeaker = document.querySelector("#speaker");
 
+
+
 btnSpeaker.addEventListener("click", (e) => {
-       
+       console.log(e)
        synth(showRecipe.textContent)
         
 })
