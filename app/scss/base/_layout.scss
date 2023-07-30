@@ -1,0 +1,7 @@
+body {
+    @include flexbox(flex, column, wrap, flex-start, center);
+    width       : 100%;
+    min-height  : 100vh;
+    padding     : 1em;
+    font-size   : 20px;
+}

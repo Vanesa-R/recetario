@@ -1,0 +1,61 @@
+.header {
+ position        : relative;
+ @include flexbox(flex, row, nowrap, space-between, center);
+ width           : 100%;
+ padding-bottom  : 3em;
+
+ @media (min-width: $bp-laptop) {
+     padding-right: 3em;
+ }
+
+ 
+
+ .greeting {
+     position: absolute;
+     left    : 0;
+     z-index : 20;
+     opacity : 0;
+     transition: ease 1s all;
+
+     @media (min-width: $bp-laptop) {
+         display : flex;
+         right   : 200px;
+         left    : initial;
+         opacity : 1;
+     }
+ }
+
+ .interaction {
+     display     : flex;
+     align-items : center;
+
+     // Login/Register/Logout
+     .btn {
+         // @include reset-appearance;
+         display: none;
+
+         &.interaction__logout {
+             display: none;
+
+             &.btn--enabled {
+                 display: inline-flex;
+                 margin-right: 0;
+             }
+         }
+
+         &.btn--primary {
+             // @include btn--primary;
+             margin-right: 8px
+         }
+
+         &.btn--secondary {
+             // @include btn--secondary;
+         }
+        
+         &.btn--enabled {
+             display: inline-flex;
+         }
+     }
+
+ }
+}
